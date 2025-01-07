@@ -10,7 +10,7 @@ def get_arguments():
 
     parser.add_option("-t", "--target", dest="iprange", help="Sets the range of addresses to scan")
 
-    (options, arguments) = parser.parse_args()
+    options, arguments = parser.parse_args()
 
     if not options.iprange:
         parser.error("[-] Please specify an address range to scan")
